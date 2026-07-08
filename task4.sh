@@ -1,67 +1,76 @@
 #!/bin/bash
 
 ####################################
-# Name: <Joban Mand>
-# CSE 391 -  
+# Name: Joban Mand
+# CSE 391
 # Homework 1 - Task 4
+####################################
+# Tutorial focus:
+# This file is the starting point for the repo. Each problem is a tiny
+# command-line drill covering basic filesystem operations: copying files,
+# listing directories, moving/renaming files, removing files, touching
+# timestamps, using globs, comparing files, and printing file contents.
+#
+# The functions are intentionally small because the original homework
+# harness called each problem separately.
 ####################################
 
 function problem1 {
-  # Type your answer to problem #1 below this line
+  # Copy a Java file into the java/ directory.
   cp MyProgram.java java/
 }
 
 function problem2 {
-  # Type your answer to problem #2 below this line
+  # List files in long format.
   ls -l
 }
 
 function problem3 {
-  # Type your answer to problem #3 below this line
+  # List /var in reverse order.
   ls -r /var
 }
 
 function problem4 {
-  # Type your answer to problem #4 below this line
+  # Rename the misspelled Java file.
   mv Burrot.java Borat.java
 }
 
 function problem5 {
-  # Type your answer to problem #5 below this line
+  # Remove the generated diff output files.
   rm diff.html diff.css
 }
 
 function problem6 {
-  # Type your answer to problem #6 below this line
-  touch touch -t 202001010415 MyProgram.java
+  # Set MyProgram.java's timestamp to Jan. 1, 2020 at 04:15.
+  touch -t 202001010415 MyProgram.java
 }
 
 function problem7 {
-  # Type your answer to problem #7 below this line
+  # List HTML and CSS files in the current directory.
   ls *html *css
 }
 
 function problem8 {
-  # Type your answer to problem #8 below this line
+  # Copy all text files into the java/ directory.
   cp *txt java/
 }
 
 function problem9 {
+  # Compare two lyric files line by line.
   diff lyrics.txt lyrics2.txt
-  
 }
 
 function problem10 {
+  # Print the lyric file.
   cat lyrics.txt
- 
 }
 
 function problem11 {
-  # Type your answer to problem #11 below this line
+  # Check whether song.txt exists by listing it.
   ls song.txt
 }
 
 function problem12 {
-  # Type your answer to problem #12 below this line
+  # Print the first seven lines of animals.txt.
   head -n 7 animals.txt
 }
